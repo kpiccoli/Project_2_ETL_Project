@@ -25,3 +25,16 @@ page_id INT,
 
 SELECT *
 FROM final_dc;
+
+SELECT *
+FROM final_dc;
+SELECT name,
+	regexp_replace(name, '\(([^)]+)\)','') as hero_name,
+	replace(replace (substring(name from '\(.+\)'),'(',''),')','') as real_name
+FROM final_dc
+SELECT *
+FROM final_marvel;
+SELECT name,
+	regexp_replace(name, '\(([^)]+)\)','') as hero_name,
+	replace(replace (substring(name from '\(.+\)'),'(',''),')','') as real_name
+FROM final_marvel
